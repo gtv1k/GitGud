@@ -43,10 +43,10 @@ You are encouraged to commit even broken stuff onto your feature branch as it's 
 ### Releases
 Releases are stable versions of your product.
 
-When finishing a release, the `release` branch is merged into both `stable` and `stable` branches. <br>
-This creates a tag with the release name for future reference
+When **finishing** a release, GitKraken will merge the `release` branch into both `develop` and `stable`. <br>
+This creates a tag with the release name for future reference.
 
-Ideally this should be the only way you're merging with `stable`
+Ideally this should be the only way you're merging with `stable`. (except for hotfixes)
 
 ---
   
