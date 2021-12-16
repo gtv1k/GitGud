@@ -83,10 +83,11 @@ Also make sure it's searchable, so define the scope in the title.
 If you're using automated Git Projects you can make [automatically close issues and move cards](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)
 
 Here's my template:
-**Summary**
-`NEW/CHANGE/FIX/DOCS [SCOPE] (WHAT) EXPLANATION`
-**Description**
 ```
+Summary:
+NEW/CHANGE/FIX/DOCS [SCOPE] (WHAT) SHORT DESCRIPTION
+
+Description:
 FURTHER DETAIL OF IMPLEMENTATION
 
 LINK TO ISSUE
