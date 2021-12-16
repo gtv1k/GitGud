@@ -4,23 +4,53 @@ A small preface here, nothing I say here is gospel and it's all subject to chang
 If you have your own way of doing it, do that. But if you have none yet then this might be for you.
 
 ### What is Git?
+<details>
+<summary> expand </summary>
+
 As you collaborate on a project and work progresses files will change. A lot. Things will get messy, and might break completely at some point. <br>
 When that happens you'll likely want to roll back to the most recent working version of your project. With version control, or in our case *git*, it is.
 
 It also allows one to roll out fixes for old releases of your project, you can just jump back in time to that version and apply your fixes.
+  
+</details>
 
 ## Git Flow
+<details>
+<summary> expand </summary>
 
+Branches are used to develop features isolated from each other. <br>
+Git flow makes it so you don't have to manually handle those yourself anymore. <br>
+It uses the concept of **features** and **releases**
+
+---
 ### Features
 
+---
 ### Releases
+  
+</details>
 
 ## Commits
+<details>
+<summary> expand </summary>
 Imagine each commit as a snapshot of a point in time where you can return, if necessary, to access your project in its earlier state.
 
+### Commit Messages
+
+
+</details>
+  
 ## Branches
+<details>
+<summary> expand </summary>
+
+
+  
+</details>
 
 ## Online vs Offline
+<details>
+<summary> expand </summary>
 
 Git works both offline and online, the problem is that it doesn't automatically sync with the online version. <br>
 This means you'll have to do this manually, by downloading and uploading changes. <br>
@@ -50,8 +80,7 @@ Before starting a new feature make sure to _always_ Pull develop first, this red
 
 ---
 
-
-## Commit Messages
+</details>
 
 
 ## (Optional) Groups
