@@ -7,10 +7,9 @@ If you have your own way of doing it, do that. But if you have none yet then thi
 <details>
 <summary> expand </summary>
 
-As you collaborate on a project and work progresses files will change. A lot. Things will get messy, and might break completely at some point. <br>
-When that happens you'll likely want to roll back to the most recent working version of your project. With version control, or in our case *git*, it is.
-
-It also allows one to roll out fixes for old releases of your project, you can just jump back in time to that version and apply your fixes.
+As you collaborate on a project and work progresses files will change. A lot.  <br>
+Things will get messy, and might break completely at some point. <br>
+When that happens you might want to roll back to the most recent working version of your project. With version control, or in our case *git*, that's easy.
   
 </details>
 
