@@ -20,7 +20,7 @@ When that happens you might want to roll back to the most recent working version
 [Tutorial](https://youtu.be/eTOgjQ9o4vQ)
   
 Branches are used to develop features isolated from each other. <br>
-Git flow makes it so you don't have to manually handle those yourself anymore. <br>
+Git flow makes it so you don't have to manually handle those yourself, it creates and deletes them for you. <br>
 
 It follows a pattern where you have different type of branches: <br>
 - The `stable` branch is the latest release of your project. <br>
@@ -54,19 +54,11 @@ Ideally this should be the only way you're merging with `stable`. (except for ho
 ## Commits
 <details>
 <summary> expand </summary>
-Imagine each commit as a snapshot of a point in time where you can return, if necessary, to access your project in its earlier state.
+Imagine each commit as a snapshot of a point in time where you can return, to access your project in its earlier state, if necessary.
 
 ### Commit Messages
 
 
-</details>
-  
-## Branches
-<details>
-<summary> expand </summary>
-
-
-  
 </details>
 
 ## Online vs Offline
