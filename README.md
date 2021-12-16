@@ -10,6 +10,9 @@ If you have your own way of doing it, do that. But if you have none yet then thi
 As you collaborate on a project and work progresses files will change. A lot.  <br>
 Things will get messy, and might break completely at some point. <br>
 When that happens you might want to roll back to the most recent working version of your project. With version control, or in our case *git*, that's easy.
+
+GitKraken is just one tool for Git, but I think it's one of most visual and easiest ones. <br>
+It gives a nice overview of all previous changes and releases which will help you get a good mental map of the project.
   
 </details>
 
@@ -30,7 +33,7 @@ It follows a pattern where you have different type of branches: <br>
 
 ---
 ### Features
-Feature branches are used for new features (who would've guessed) and bug fixes. <br>
+Feature branches are used for working on new features (duh) and bug fixes. <br>
 You should basically never work on the `develop` branch directly, split off into a feature branch first, break shit and once it's stable and you've tested it you can **finish** the feature.
   
 When **finishing** a feature branch, GitKraken will merge the feature branch into `develop`, and delete the feature branch from the local repository.
@@ -56,8 +59,51 @@ Ideally this should be the only way you're merging with `stable`. (except for ho
 <summary> expand </summary>
 Imagine each commit as a snapshot of a point in time where you can return, to access your project in its earlier state, if necessary.
 
+I prefer doing them very small and incremental steps, I usually commit for invidual functions or files added.
+
+### Staging
+
+[Tutorial](https://support.gitkraken.com/working-with-commits/staging/)
+
+Staging is prepping your files for a commit, you can manually select what to commit. <br>
+Say you started on something but plan to change it in the next commit anyways just don't commit it now, make the changes and commit it then. <br>
+
+You can do this per file, line, or block of code. <br>
+But most of the time `Stage all changes` will do just fine.
+  
+---
+
 ### Commit Messages
 
+To identify each commit, you provide them with a message - they're a brief statement of what exactly happened in between the last commit and this one. <br>
+Put a bit of thought into it, this is the only place where viewers can see not just what has changed, but why. <br>
+Think about what future you or other people would want to know about the stuff you just added or changed. <br>
+Also make sure it's searchable, so define the scope in the title.
+
+If you're using automated Git Projects you can make [automatically close issues and move cards](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)
+
+Here's my template:
+**Summary**
+`NEW/CHANGE/FIX/DOCS [SCOPE] (WHAT) EXPLANATION`
+**Description**
+```
+FURTHER DETAIL OF IMPLEMENTATION
+
+LINK TO ISSUE
+```
+
+Example:
+```
+NEW [Player] (Function) Jump()
+
+Added a jump to the player.
+o If you press the jump key shortly it jumps 32px
+o If you hold it longer it jumps up to 96px
+
+Closes #12
+```
+
+---
 
 </details>
 
