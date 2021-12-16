@@ -18,15 +18,37 @@ It also allows one to roll out fixes for old releases of your project, you can j
 <details>
 <summary> expand </summary>
 
+[Tutorial](https://youtu.be/eTOgjQ9o4vQ)
+  
 Branches are used to develop features isolated from each other. <br>
 Git flow makes it so you don't have to manually handle those yourself anymore. <br>
-It uses the concept of **features** and **releases**
+
+It follows a pattern where you have different type of branches: <br>
+- The `stable` branch is the latest release of your project. <br>
+- The `develop` branch is your WIP version, merge features into this and test it, once it's stable you can make a new release.  <br>
+- The `feature/` branches are where you'll be working.
+- The `release/` branches are saved versions of your project.
 
 ---
 ### Features
+Feature branches are used for new features (who would've guessed) and bug fixes. <br>
+You should basically never work on the `develop` branch directly, split off into a feature branch first, break shit and once it's stable and you've tested it you can **finish** the feature.
+  
+When **finishing** a feature branch, GitKraken will merge the feature branch into `develop`, and delete the feature branch from the local repository.
+
+You are encouraged to commit even broken stuff onto your feature branch as it's completely separate, it doesn't affect the project for other people _until_ you **finish** it and merge it with `develop`.
 
 ---
+  
 ### Releases
+Releases are stable versions of your product.
+
+When finishing a release, the `release` branch is merged into both `stable` and `stable` branches. <br>
+This creates a tag with the release name for future reference
+
+Ideally this should be the only way you're merging with `stable`
+
+---
   
 </details>
 
